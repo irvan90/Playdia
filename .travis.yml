@@ -2,4 +2,4 @@ language: swift
 osx_image: xcode14.1 
 xcode_project: Playdia.xcodeproj 
 xcode_scheme: Playdia
-xcode_destination: platform=iOS Simulator,OS=16.0,name=iPhone 14 Pro
+xcode_destination: platform=iOS Simulator,OS=16.2,name=iPhone 14 Pro
