@@ -46,6 +46,8 @@
 		AE25A7AF296AFCF2002DFC46 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AE25A7AE296AFCF2002DFC46 /* Realm */; };
 		AE25A7B1296AFCF2002DFC46 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AE25A7B0296AFCF2002DFC46 /* RealmSwift */; };
 		AE25A7BB296B06FD002DFC46 /* PlaydiaCore in Frameworks */ = {isa = PBXBuildFile; productRef = AE25A7BA296B06FD002DFC46 /* PlaydiaCore */; };
+		AE25A7BD296B4386002DFC46 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AE25A7BC296B4386002DFC46 /* Realm */; };
+		AE25A7BF296B438C002DFC46 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AE25A7BE296B438C002DFC46 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +128,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE25A7BF296B438C002DFC46 /* RealmSwift in Frameworks */,
+				AE25A7BD296B4386002DFC46 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +448,10 @@
 				AE0574DA2967C7DB00D9C5A7 /* PBXTargetDependency */,
 			);
 			name = PlaydiaTests;
+			packageProductDependencies = (
+				AE25A7BC296B4386002DFC46 /* Realm */,
+				AE25A7BE296B438C002DFC46 /* RealmSwift */,
+			);
 			productName = PlaydiaTests;
 			productReference = AE0574D82967C7DB00D9C5A7 /* PlaydiaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -1019,6 +1027,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = AE25A7B7296B04FE002DFC46 /* XCRemoteSwiftPackageReference "PlaydiaCore" */;
 			productName = PlaydiaCore;
+		};
+		AE25A7BC296B4386002DFC46 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE25A7AD296AFCF2002DFC46 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		AE25A7BE296B438C002DFC46 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE25A7AD296AFCF2002DFC46 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
