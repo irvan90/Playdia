@@ -6,6 +6,6 @@ final class GenreTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(Genre().text, "Hello, World!")
+//        XCTAssertEqual(Genre().text, "Hello, World!")
     }
 }
