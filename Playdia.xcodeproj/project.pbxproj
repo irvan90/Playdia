@@ -1,0 +1,1026 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE0574CC2967C7DA00D9C5A7 /* PlaydiaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0574CB2967C7DA00D9C5A7 /* PlaydiaApp.swift */; };
+		AE0574D02967C7DB00D9C5A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0574CF2967C7DB00D9C5A7 /* Assets.xcassets */; };
+		AE0574D32967C7DB00D9C5A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE0574D22967C7DB00D9C5A7 /* Preview Assets.xcassets */; };
+		AE0574DD2967C7DB00D9C5A7 /* PlaydiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0574DC2967C7DB00D9C5A7 /* PlaydiaTests.swift */; };
+		AE0574E72967C7DB00D9C5A7 /* PlaydiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0574E62967C7DB00D9C5A7 /* PlaydiaUITests.swift */; };
+		AE0574E92967C7DB00D9C5A7 /* PlaydiaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0574E82967C7DB00D9C5A7 /* PlaydiaUITestsLaunchTests.swift */; };
+		AE23FC282967FB5800001795 /* Game in Frameworks */ = {isa = PBXBuildFile; productRef = AE23FC272967FB5800001795 /* Game */; };
+		AE23FC2A2967FB5D00001795 /* Genre in Frameworks */ = {isa = PBXBuildFile; productRef = AE23FC292967FB5D00001795 /* Genre */; };
+		AE23FC2C2967FB6100001795 /* Search in Frameworks */ = {isa = PBXBuildFile; productRef = AE23FC2B2967FB6100001795 /* Search */; };
+		AE23FC302967FBB000001795 /* Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC2F2967FBB000001795 /* Injection.swift */; };
+		AE23FC352967FBF900001795 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC342967FBF900001795 /* Utils.swift */; };
+		AE23FC372967FC1300001795 /* URLError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC362967FC1300001795 /* URLError.swift */; };
+		AE23FC392967FC3700001795 /* APICall.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC382967FC3700001795 /* APICall.swift */; };
+		AE23FC4D2967FDFD00001795 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC4C2967FDFD00001795 /* SplashView.swift */; };
+		AE23FC5D2967FEDF00001795 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC5C2967FEDF00001795 /* DetailView.swift */; };
+		AE23FC5F2967FEFA00001795 /* PlatformItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC5E2967FEFA00001795 /* PlatformItem.swift */; };
+		AE23FC632967FF2B00001795 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC622967FF2B00001795 /* HomeRouter.swift */; };
+		AE23FC692967FF6F00001795 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC682967FF6F00001795 /* ContentView.swift */; };
+		AE23FC6B2967FF9500001795 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC6A2967FF9500001795 /* HomeView.swift */; };
+		AE23FC702967FFCA00001795 /* GameItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC6F2967FFCA00001795 /* GameItem.swift */; };
+		AE23FC742968003000001795 /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC732968003000001795 /* FavoriteView.swift */; };
+		AE23FC762968004700001795 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC752968004700001795 /* SearchView.swift */; };
+		AE23FC7B296810DA00001795 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AE23FC7A296810DA00001795 /* Kingfisher */; };
+		AE23FC8A2968308600001795 /* ImageOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC892968308600001795 /* ImageOverlayView.swift */; };
+		AE23FC8C2968339A00001795 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC8B2968339A00001795 /* ProfileView.swift */; };
+		AE23FC902968652000001795 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC8F2968652000001795 /* Spinner.swift */; };
+		AE23FC932968739800001795 /* SearchItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC922968739800001795 /* SearchItem.swift */; };
+		AE23FC95296878CE00001795 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC94296878CE00001795 /* StarsView.swift */; };
+		AE23FC9A296889D100001795 /* FavoriteItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE23FC99296889D100001795 /* FavoriteItem.swift */; };
+		AE23FC9D2968922300001795 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = AE23FC9C2968922300001795 /* AlertToast */; };
+		AE25A796296A2830002DFC46 /* PlatformLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE25A795296A2830002DFC46 /* PlatformLogoView.swift */; };
+		AE25A7A0296AA33D002DFC46 /* StoryUI in Frameworks */ = {isa = PBXBuildFile; productRef = AE25A79F296AA33D002DFC46 /* StoryUI */; };
+		AE25A7A2296AC7C1002DFC46 /* StoryCarousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE25A7A1296AC7C1002DFC46 /* StoryCarousel.swift */; };
+		AE25A7A4296ACA5F002DFC46 /* StoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE25A7A3296ACA5F002DFC46 /* StoryItem.swift */; };
+		AE25A7A9296AEC52002DFC46 /* InstagramSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE25A7A8296AEC52002DFC46 /* InstagramSans-Regular.ttf */; };
+		AE25A7AC296AFCB8002DFC46 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = AE25A7AB296AFCB8002DFC46 /* Alamofire */; };
+		AE25A7AF296AFCF2002DFC46 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = AE25A7AE296AFCF2002DFC46 /* Realm */; };
+		AE25A7B1296AFCF2002DFC46 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = AE25A7B0296AFCF2002DFC46 /* RealmSwift */; };
+		AE25A7BB296B06FD002DFC46 /* PlaydiaCore in Frameworks */ = {isa = PBXBuildFile; productRef = AE25A7BA296B06FD002DFC46 /* PlaydiaCore */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE0574D92967C7DB00D9C5A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0574C02967C7DA00D9C5A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0574C72967C7DA00D9C5A7;
+			remoteInfo = Playdia;
+		};
+		AE0574E32967C7DB00D9C5A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE0574C02967C7DA00D9C5A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0574C72967C7DA00D9C5A7;
+			remoteInfo = Playdia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE0574C82967C7DA00D9C5A7 /* Playdia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playdia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0574CB2967C7DA00D9C5A7 /* PlaydiaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaydiaApp.swift; sourceTree = "<group>"; };
+		AE0574CF2967C7DB00D9C5A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE0574D22967C7DB00D9C5A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AE0574D82967C7DB00D9C5A7 /* PlaydiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaydiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0574DC2967C7DB00D9C5A7 /* PlaydiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaydiaTests.swift; sourceTree = "<group>"; };
+		AE0574E22967C7DB00D9C5A7 /* PlaydiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaydiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE0574E62967C7DB00D9C5A7 /* PlaydiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaydiaUITests.swift; sourceTree = "<group>"; };
+		AE0574E82967C7DB00D9C5A7 /* PlaydiaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaydiaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AE0575092967E98C00D9C5A7 /* Game */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Game; path = Modules/Game; sourceTree = "<group>"; };
+		AE05750C2967F61800D9C5A7 /* Search */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Search; path = Modules/Search; sourceTree = "<group>"; };
+		AE05750D2967F7C200D9C5A7 /* Genre */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Genre; path = Modules/Genre; sourceTree = "<group>"; };
+		AE23FC2F2967FBB000001795 /* Injection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injection.swift; sourceTree = "<group>"; };
+		AE23FC342967FBF900001795 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		AE23FC362967FC1300001795 /* URLError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLError.swift; sourceTree = "<group>"; };
+		AE23FC382967FC3700001795 /* APICall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICall.swift; sourceTree = "<group>"; };
+		AE23FC4C2967FDFD00001795 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		AE23FC5C2967FEDF00001795 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		AE23FC5E2967FEFA00001795 /* PlatformItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformItem.swift; sourceTree = "<group>"; };
+		AE23FC622967FF2B00001795 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		AE23FC682967FF6F00001795 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AE23FC6A2967FF9500001795 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AE23FC6F2967FFCA00001795 /* GameItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameItem.swift; sourceTree = "<group>"; };
+		AE23FC732968003000001795 /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		AE23FC752968004700001795 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		AE23FC8629681DDB00001795 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE23FC892968308600001795 /* ImageOverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOverlayView.swift; sourceTree = "<group>"; };
+		AE23FC8B2968339A00001795 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		AE23FC8F2968652000001795 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		AE23FC922968739800001795 /* SearchItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchItem.swift; sourceTree = "<group>"; };
+		AE23FC94296878CE00001795 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
+		AE23FC99296889D100001795 /* FavoriteItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItem.swift; sourceTree = "<group>"; };
+		AE25A795296A2830002DFC46 /* PlatformLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformLogoView.swift; sourceTree = "<group>"; };
+		AE25A7A1296AC7C1002DFC46 /* StoryCarousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCarousel.swift; sourceTree = "<group>"; };
+		AE25A7A3296ACA5F002DFC46 /* StoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryItem.swift; sourceTree = "<group>"; };
+		AE25A7A8296AEC52002DFC46 /* InstagramSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "InstagramSans-Regular.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE0574C52967C7DA00D9C5A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE25A7AC296AFCB8002DFC46 /* Alamofire in Frameworks */,
+				AE23FC9D2968922300001795 /* AlertToast in Frameworks */,
+				AE25A7BB296B06FD002DFC46 /* PlaydiaCore in Frameworks */,
+				AE23FC7B296810DA00001795 /* Kingfisher in Frameworks */,
+				AE23FC2C2967FB6100001795 /* Search in Frameworks */,
+				AE25A7A0296AA33D002DFC46 /* StoryUI in Frameworks */,
+				AE25A7AF296AFCF2002DFC46 /* Realm in Frameworks */,
+				AE23FC282967FB5800001795 /* Game in Frameworks */,
+				AE25A7B1296AFCF2002DFC46 /* RealmSwift in Frameworks */,
+				AE23FC2A2967FB5D00001795 /* Genre in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0574D52967C7DB00D9C5A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0574DF2967C7DB00D9C5A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE0574BF2967C7DA00D9C5A7 = {
+			isa = PBXGroup;
+			children = (
+				AE0574F52967C87D00D9C5A7 /* Packages */,
+				AE0574CA2967C7DA00D9C5A7 /* Playdia */,
+				AE0574DB2967C7DB00D9C5A7 /* PlaydiaTests */,
+				AE0574E52967C7DB00D9C5A7 /* PlaydiaUITests */,
+				AE0574C92967C7DA00D9C5A7 /* Products */,
+				AE0574F72967C8E300D9C5A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE0574C92967C7DA00D9C5A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE0574C82967C7DA00D9C5A7 /* Playdia.app */,
+				AE0574D82967C7DB00D9C5A7 /* PlaydiaTests.xctest */,
+				AE0574E22967C7DB00D9C5A7 /* PlaydiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE0574CA2967C7DA00D9C5A7 /* Playdia */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC8629681DDB00001795 /* Info.plist */,
+				AE23FC1D2967FAD700001795 /* App */,
+				AE23FC1E2967FADF00001795 /* Core */,
+				AE23FC1F2967FAE900001795 /* Module */,
+				AE23FC202967FAFB00001795 /* SupportingFiles */,
+				AE0574D12967C7DB00D9C5A7 /* Preview Content */,
+			);
+			path = Playdia;
+			sourceTree = "<group>";
+		};
+		AE0574D12967C7DB00D9C5A7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AE0574D22967C7DB00D9C5A7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AE0574DB2967C7DB00D9C5A7 /* PlaydiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE0574DC2967C7DB00D9C5A7 /* PlaydiaTests.swift */,
+			);
+			path = PlaydiaTests;
+			sourceTree = "<group>";
+		};
+		AE0574E52967C7DB00D9C5A7 /* PlaydiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AE0574E62967C7DB00D9C5A7 /* PlaydiaUITests.swift */,
+				AE0574E82967C7DB00D9C5A7 /* PlaydiaUITestsLaunchTests.swift */,
+			);
+			path = PlaydiaUITests;
+			sourceTree = "<group>";
+		};
+		AE0574F52967C87D00D9C5A7 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				AE0575092967E98C00D9C5A7 /* Game */,
+				AE05750C2967F61800D9C5A7 /* Search */,
+				AE05750D2967F7C200D9C5A7 /* Genre */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		AE0574F72967C8E300D9C5A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE23FC1D2967FAD700001795 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC4C2967FDFD00001795 /* SplashView.swift */,
+				AE0574CB2967C7DA00D9C5A7 /* PlaydiaApp.swift */,
+				AE23FC682967FF6F00001795 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AE23FC1E2967FADF00001795 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC2D2967FB8700001795 /* DI */,
+				AE23FC2E2967FB9100001795 /* Utils */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		AE23FC1F2967FAE900001795 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC612967FF1A00001795 /* Router */,
+				AE23FC482967FD6800001795 /* GameDetail */,
+				AE23FC672967FF5400001795 /* Home */,
+				AE23FC662967FF4D00001795 /* Favorite */,
+				AE23FC652967FF4700001795 /* Search */,
+				AE23FC642967FF3F00001795 /* Profile */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		AE23FC202967FAFB00001795 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC452967FD1E00001795 /* Fonts */,
+				AE0574CF2967C7DB00D9C5A7 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AE23FC2D2967FB8700001795 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC2F2967FBB000001795 /* Injection.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		AE23FC2E2967FB9100001795 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC332967FBDA00001795 /* Extension */,
+				AE23FC322967FBD100001795 /* Network */,
+				AE23FC312967FBCC00001795 /* View */,
+				AE23FC342967FBF900001795 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		AE23FC312967FBCC00001795 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC892968308600001795 /* ImageOverlayView.swift */,
+				AE23FC8F2968652000001795 /* Spinner.swift */,
+				AE23FC94296878CE00001795 /* StarsView.swift */,
+				AE25A795296A2830002DFC46 /* PlatformLogoView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AE23FC322967FBD100001795 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC382967FC3700001795 /* APICall.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AE23FC332967FBDA00001795 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC362967FC1300001795 /* URLError.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		AE23FC452967FD1E00001795 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AE25A7A8296AEC52002DFC46 /* InstagramSans-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AE23FC482967FD6800001795 /* GameDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AE25A797296A6F7A002DFC46 /* Items */,
+				AE23FC5C2967FEDF00001795 /* DetailView.swift */,
+			);
+			path = GameDetail;
+			sourceTree = "<group>";
+		};
+		AE23FC612967FF1A00001795 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC622967FF2B00001795 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AE23FC642967FF3F00001795 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC8B2968339A00001795 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		AE23FC652967FF4700001795 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC912968738100001795 /* Items */,
+				AE23FC752968004700001795 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AE23FC662967FF4D00001795 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC98296889BD00001795 /* Items */,
+				AE23FC732968003000001795 /* FavoriteView.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		AE23FC672967FF5400001795 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC6C2967FF9900001795 /* Items */,
+				AE23FC6A2967FF9500001795 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AE23FC6C2967FF9900001795 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC6F2967FFCA00001795 /* GameItem.swift */,
+				AE25A7A1296AC7C1002DFC46 /* StoryCarousel.swift */,
+				AE25A7A3296ACA5F002DFC46 /* StoryItem.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		AE23FC912968738100001795 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC922968739800001795 /* SearchItem.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		AE23FC98296889BD00001795 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC99296889D100001795 /* FavoriteItem.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+		AE25A797296A6F7A002DFC46 /* Items */ = {
+			isa = PBXGroup;
+			children = (
+				AE23FC5E2967FEFA00001795 /* PlatformItem.swift */,
+			);
+			path = Items;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE0574C72967C7DA00D9C5A7 /* Playdia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0574EC2967C7DB00D9C5A7 /* Build configuration list for PBXNativeTarget "Playdia" */;
+			buildPhases = (
+				AE0574C42967C7DA00D9C5A7 /* Sources */,
+				AE0574C52967C7DA00D9C5A7 /* Frameworks */,
+				AE0574C62967C7DA00D9C5A7 /* Resources */,
+				AE25A7A5296AE458002DFC46 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Playdia;
+			packageProductDependencies = (
+				AE23FC272967FB5800001795 /* Game */,
+				AE23FC292967FB5D00001795 /* Genre */,
+				AE23FC2B2967FB6100001795 /* Search */,
+				AE23FC7A296810DA00001795 /* Kingfisher */,
+				AE23FC9C2968922300001795 /* AlertToast */,
+				AE25A79F296AA33D002DFC46 /* StoryUI */,
+				AE25A7AB296AFCB8002DFC46 /* Alamofire */,
+				AE25A7AE296AFCF2002DFC46 /* Realm */,
+				AE25A7B0296AFCF2002DFC46 /* RealmSwift */,
+				AE25A7BA296B06FD002DFC46 /* PlaydiaCore */,
+			);
+			productName = Playdia;
+			productReference = AE0574C82967C7DA00D9C5A7 /* Playdia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE0574D72967C7DB00D9C5A7 /* PlaydiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0574EF2967C7DB00D9C5A7 /* Build configuration list for PBXNativeTarget "PlaydiaTests" */;
+			buildPhases = (
+				AE0574D42967C7DB00D9C5A7 /* Sources */,
+				AE0574D52967C7DB00D9C5A7 /* Frameworks */,
+				AE0574D62967C7DB00D9C5A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0574DA2967C7DB00D9C5A7 /* PBXTargetDependency */,
+			);
+			name = PlaydiaTests;
+			productName = PlaydiaTests;
+			productReference = AE0574D82967C7DB00D9C5A7 /* PlaydiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AE0574E12967C7DB00D9C5A7 /* PlaydiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE0574F22967C7DB00D9C5A7 /* Build configuration list for PBXNativeTarget "PlaydiaUITests" */;
+			buildPhases = (
+				AE0574DE2967C7DB00D9C5A7 /* Sources */,
+				AE0574DF2967C7DB00D9C5A7 /* Frameworks */,
+				AE0574E02967C7DB00D9C5A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE0574E42967C7DB00D9C5A7 /* PBXTargetDependency */,
+			);
+			name = PlaydiaUITests;
+			productName = PlaydiaUITests;
+			productReference = AE0574E22967C7DB00D9C5A7 /* PlaydiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE0574C02967C7DA00D9C5A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					AE0574C72967C7DA00D9C5A7 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					AE0574D72967C7DB00D9C5A7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AE0574C72967C7DA00D9C5A7;
+					};
+					AE0574E12967C7DB00D9C5A7 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = AE0574C72967C7DA00D9C5A7;
+					};
+				};
+			};
+			buildConfigurationList = AE0574C32967C7DA00D9C5A7 /* Build configuration list for PBXProject "Playdia" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE0574BF2967C7DA00D9C5A7;
+			packageReferences = (
+				AE23FC79296810DA00001795 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				AE23FC9B2968922300001795 /* XCRemoteSwiftPackageReference "AlertToast" */,
+				AE25A79E296AA33D002DFC46 /* XCRemoteSwiftPackageReference "StoryUI" */,
+				AE25A7AA296AFCB8002DFC46 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				AE25A7AD296AFCF2002DFC46 /* XCRemoteSwiftPackageReference "realm-swift" */,
+				AE25A7B7296B04FE002DFC46 /* XCRemoteSwiftPackageReference "PlaydiaCore" */,
+			);
+			productRefGroup = AE0574C92967C7DA00D9C5A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE0574C72967C7DA00D9C5A7 /* Playdia */,
+				AE0574D72967C7DB00D9C5A7 /* PlaydiaTests */,
+				AE0574E12967C7DB00D9C5A7 /* PlaydiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE0574C62967C7DA00D9C5A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE25A7A9296AEC52002DFC46 /* InstagramSans-Regular.ttf in Resources */,
+				AE0574D32967C7DB00D9C5A7 /* Preview Assets.xcassets in Resources */,
+				AE0574D02967C7DB00D9C5A7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0574D62967C7DB00D9C5A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0574E02967C7DB00D9C5A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE25A7A5296AE458002DFC46 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -d \"/opt/homebrew/bin/\"; then\n  PATH=\"/opt/homebrew/bin/:${PATH}\"\nfi\n\nexport PATH\n\nif which swiftlint >/dev/null; then\n  swiftlint \nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE0574C42967C7DA00D9C5A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE23FC4D2967FDFD00001795 /* SplashView.swift in Sources */,
+				AE25A7A4296ACA5F002DFC46 /* StoryItem.swift in Sources */,
+				AE23FC742968003000001795 /* FavoriteView.swift in Sources */,
+				AE23FC902968652000001795 /* Spinner.swift in Sources */,
+				AE25A7A2296AC7C1002DFC46 /* StoryCarousel.swift in Sources */,
+				AE23FC5F2967FEFA00001795 /* PlatformItem.swift in Sources */,
+				AE23FC632967FF2B00001795 /* HomeRouter.swift in Sources */,
+				AE23FC95296878CE00001795 /* StarsView.swift in Sources */,
+				AE23FC6B2967FF9500001795 /* HomeView.swift in Sources */,
+				AE0574CC2967C7DA00D9C5A7 /* PlaydiaApp.swift in Sources */,
+				AE23FC932968739800001795 /* SearchItem.swift in Sources */,
+				AE25A796296A2830002DFC46 /* PlatformLogoView.swift in Sources */,
+				AE23FC8A2968308600001795 /* ImageOverlayView.swift in Sources */,
+				AE23FC302967FBB000001795 /* Injection.swift in Sources */,
+				AE23FC8C2968339A00001795 /* ProfileView.swift in Sources */,
+				AE23FC702967FFCA00001795 /* GameItem.swift in Sources */,
+				AE23FC392967FC3700001795 /* APICall.swift in Sources */,
+				AE23FC5D2967FEDF00001795 /* DetailView.swift in Sources */,
+				AE23FC762968004700001795 /* SearchView.swift in Sources */,
+				AE23FC372967FC1300001795 /* URLError.swift in Sources */,
+				AE23FC9A296889D100001795 /* FavoriteItem.swift in Sources */,
+				AE23FC352967FBF900001795 /* Utils.swift in Sources */,
+				AE23FC692967FF6F00001795 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0574D42967C7DB00D9C5A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0574DD2967C7DB00D9C5A7 /* PlaydiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0574DE2967C7DB00D9C5A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE0574E72967C7DB00D9C5A7 /* PlaydiaUITests.swift in Sources */,
+				AE0574E92967C7DB00D9C5A7 /* PlaydiaUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE0574DA2967C7DB00D9C5A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0574C72967C7DA00D9C5A7 /* Playdia */;
+			targetProxy = AE0574D92967C7DB00D9C5A7 /* PBXContainerItemProxy */;
+		};
+		AE0574E42967C7DB00D9C5A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE0574C72967C7DA00D9C5A7 /* Playdia */;
+			targetProxy = AE0574E32967C7DB00D9C5A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AE0574EA2967C7DB00D9C5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE0574EB2967C7DB00D9C5A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE0574ED2967C7DB00D9C5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Playdia/Preview Content\"";
+				DEVELOPMENT_TEAM = HX56GTWBV4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Playdia/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirvaann.Playdia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE0574EE2967C7DB00D9C5A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Playdia/Preview Content\"";
+				DEVELOPMENT_TEAM = HX56GTWBV4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Playdia/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirvaann.Playdia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AE0574F02967C7DB00D9C5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HX56GTWBV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirvaann.PlaydiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playdia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Playdia";
+			};
+			name = Debug;
+		};
+		AE0574F12967C7DB00D9C5A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HX56GTWBV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirvaann.PlaydiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Playdia.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Playdia";
+			};
+			name = Release;
+		};
+		AE0574F32967C7DB00D9C5A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HX56GTWBV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirvaann.PlaydiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Playdia;
+			};
+			name = Debug;
+		};
+		AE0574F42967C7DB00D9C5A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HX56GTWBV4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mirvaann.PlaydiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Playdia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE0574C32967C7DA00D9C5A7 /* Build configuration list for PBXProject "Playdia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0574EA2967C7DB00D9C5A7 /* Debug */,
+				AE0574EB2967C7DB00D9C5A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0574EC2967C7DB00D9C5A7 /* Build configuration list for PBXNativeTarget "Playdia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0574ED2967C7DB00D9C5A7 /* Debug */,
+				AE0574EE2967C7DB00D9C5A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0574EF2967C7DB00D9C5A7 /* Build configuration list for PBXNativeTarget "PlaydiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0574F02967C7DB00D9C5A7 /* Debug */,
+				AE0574F12967C7DB00D9C5A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE0574F22967C7DB00D9C5A7 /* Build configuration list for PBXNativeTarget "PlaydiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE0574F32967C7DB00D9C5A7 /* Debug */,
+				AE0574F42967C7DB00D9C5A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AE23FC79296810DA00001795 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = exactVersion;
+				version = 7.4.1;
+			};
+		};
+		AE23FC9B2968922300001795 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		AE25A79E296AA33D002DFC46 /* XCRemoteSwiftPackageReference "StoryUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tiskender2/StoryUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		AE25A7AA296AFCB8002DFC46 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		AE25A7AD296AFCF2002DFC46 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.33.0;
+			};
+		};
+		AE25A7B7296B04FE002DFC46 /* XCRemoteSwiftPackageReference "PlaydiaCore" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/irvan90/PlaydiaCore";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AE23FC272967FB5800001795 /* Game */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Game;
+		};
+		AE23FC292967FB5D00001795 /* Genre */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Genre;
+		};
+		AE23FC2B2967FB6100001795 /* Search */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Search;
+		};
+		AE23FC7A296810DA00001795 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE23FC79296810DA00001795 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		AE23FC9C2968922300001795 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE23FC9B2968922300001795 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+		AE25A79F296AA33D002DFC46 /* StoryUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE25A79E296AA33D002DFC46 /* XCRemoteSwiftPackageReference "StoryUI" */;
+			productName = StoryUI;
+		};
+		AE25A7AB296AFCB8002DFC46 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE25A7AA296AFCB8002DFC46 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		AE25A7AE296AFCF2002DFC46 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE25A7AD296AFCF2002DFC46 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		AE25A7B0296AFCF2002DFC46 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE25A7AD296AFCF2002DFC46 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		AE25A7BA296B06FD002DFC46 /* PlaydiaCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE25A7B7296B04FE002DFC46 /* XCRemoteSwiftPackageReference "PlaydiaCore" */;
+			productName = PlaydiaCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = AE0574C02967C7DA00D9C5A7 /* Project object */;
+}
