@@ -7,5 +7,6 @@ final class SearchTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
 //        XCTAssertEqual(Search().text, "Hello, World!")
+			throw XCTSkip("Required API is not available for this test.")
     }
 }

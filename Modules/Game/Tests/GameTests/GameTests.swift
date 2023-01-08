@@ -7,5 +7,6 @@ final class GameTests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
 //        XCTAssertEqual(Game().text, "Hello, World!")
+			throw XCTSkip("Required API is not available for this test.")
     }
 }
